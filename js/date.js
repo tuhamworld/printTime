@@ -9,7 +9,6 @@ function showTime() {
     let minutes = today.getMinutes();
     let seconds = today.getSeconds();
     let todayDate = today.toDateString();
-    pDate.textContent = todayDate + ' | ' + hour + ':' + minutes + ':' + seconds + am;
 
     if (hour < 12) {
         am = 'am'
@@ -17,6 +16,7 @@ function showTime() {
         am = 'pm'
     }
 
+    pDate.textContent = todayDate + ' | ' + hour + ':' + minutes + ':' + seconds + am;
 }
 
 // Automatically change date
